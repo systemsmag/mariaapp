@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
-import { Menu as MenuIcon, X } from "lucide-react";
+import { Menu as MenuIcon, X, Download } from "lucide-react";
 import { Logo, Wordmark } from "./Logo";
+
+const MENU_PDF_URL =
+  "https://customer-assets.emergentagent.com/job_restaurant-io/artifacts/1se2sw4l_meniu%20%281%29.pdf";
 
 const links = [
   { label: "Story", href: "#story" },
@@ -53,11 +56,15 @@ export const Header = () => {
         </nav>
 
         <a
-          href="#contact"
-          data-testid="reserve-cta-header"
+          href={MENU_PDF_URL}
+          target="_blank"
+          rel="noreferrer"
+          download="meniu-la-maria-si-ion.pdf"
+          data-testid="download-menu-cta-header"
           className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-xs uppercase label-tracking border border-stone-700 text-stone-100 hover:bg-amber-600 hover:border-amber-600 hover:text-stone-950 transition-colors"
         >
-          Reserve
+          <Download className="w-3.5 h-3.5" />
+          Download Menu
         </a>
 
         <button
@@ -90,12 +97,16 @@ export const Header = () => {
               </a>
             ))}
             <a
-              href="#contact"
+              href={MENU_PDF_URL}
+              target="_blank"
+              rel="noreferrer"
+              download="meniu-la-maria-si-ion.pdf"
               onClick={() => setOpen(false)}
-              data-testid="reserve-cta-mobile"
+              data-testid="download-menu-cta-mobile"
               className="inline-flex items-center justify-center gap-2 px-5 py-3 text-xs uppercase label-tracking border border-amber-600 text-amber-500 mt-2"
             >
-              Reserve a table
+              <Download className="w-3.5 h-3.5" />
+              Download Menu
             </a>
           </div>
         </div>
