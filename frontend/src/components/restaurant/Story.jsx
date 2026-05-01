@@ -46,7 +46,7 @@ export const Story = () => {
               </h2>
               <div className="mt-10 space-y-6 max-w-xl text-stone-300 text-base md:text-lg font-light leading-relaxed">
                 <p>
-                  Lucenta opened on a quiet street in Brera with twenty-six
+                  La Maria si Ion opened on a quiet street in Brera with twenty-six
                   seats and one rule — cook the way Matteo&rsquo;s grandmother
                   cooked, in Bari, with the windows open and the radio on.
                 </p>

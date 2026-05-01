@@ -49,7 +49,7 @@ export const Contact = () => {
           <div className="col-span-12 md:col-span-7 reveal">
             <div className="relative aspect-[4/3] md:aspect-[3/2] overflow-hidden border border-stone-800">
               <iframe
-                title="Lucenta location map"
+                title="La Maria si Ion location map"
                 data-testid="location-map"
                 src="https://www.google.com/maps?q=Brera+Milano+Italy&output=embed"
                 className="w-full h-full grayscale contrast-125 brightness-[0.7]"

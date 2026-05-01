@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="grid grid-cols-12 gap-8 mb-16">
           <div className="col-span-12 md:col-span-5">
             <div className="font-serif italic text-amber-600 text-3xl mb-2">
-              Lucenta
+              La Maria si Ion
             </div>
             <div className="text-[11px] uppercase label-tracking text-stone-500">
               Trattoria · Pizzeria
@@ -64,7 +64,7 @@ export const Footer = () => {
         </div>
 
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] uppercase label-tracking text-stone-500">
-          <div>© {new Date().getFullYear()} Lucenta · All rights reserved</div>
+          <div>© {new Date().getFullYear()} La Maria si Ion · All rights reserved</div>
           <div className="flex items-center gap-6">
             <a href="#top" className="hover:text-amber-500 transition-colors">
               Back to top
@@ -75,8 +75,8 @@ export const Footer = () => {
 
         {/* Massive wordmark */}
         <div className="mt-20 md:mt-32 select-none pointer-events-none">
-          <div className="font-serif italic text-stone-900 text-[22vw] leading-[0.85] tracking-tighter">
-            Lucenta.
+          <div className="font-serif italic text-stone-900 text-[18vw] leading-[0.85] tracking-tighter whitespace-nowrap">
+            La Maria si Ion.
           </div>
         </div>
       </div>

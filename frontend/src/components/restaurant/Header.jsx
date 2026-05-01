@@ -34,10 +34,10 @@ export const Header = () => {
           data-testid="logo-link"
           className="flex items-center gap-3 group"
         >
-          <span className="font-serif italic text-amber-600 text-2xl leading-none">L</span>
+          <span className="font-serif italic text-amber-600 text-2xl leading-none">M</span>
           <div className="leading-none">
             <div className="font-serif text-xl tracking-wide text-stone-100">
-              Lucenta
+              La Maria si Ion
             </div>
             <div className="text-[10px] uppercase label-tracking text-stone-500 mt-1">
               Trattoria · Pizzeria

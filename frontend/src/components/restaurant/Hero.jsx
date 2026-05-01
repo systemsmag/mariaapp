@@ -17,7 +17,7 @@ export const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={HERO_IMG}
-          alt="Lucenta restaurant interior at night"
+          alt="La Maria si Ion restaurant interior at night"
           className="w-full h-full object-cover"
           loading="eager"
         />
