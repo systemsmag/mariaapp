@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu as MenuIcon, X } from "lucide-react";
+import { Logo, Wordmark } from "./Logo";
 
 const links = [
   { label: "Story", href: "#story" },
@@ -32,17 +33,10 @@ export const Header = () => {
         <a
           href="#top"
           data-testid="logo-link"
-          className="flex items-center gap-3 group"
+          className="flex items-center gap-3 group text-stone-100"
         >
-          <span className="font-serif italic text-amber-600 text-2xl leading-none">M</span>
-          <div className="leading-none">
-            <div className="font-serif text-xl tracking-wide text-stone-100">
-              La Maria si Ion
-            </div>
-            <div className="text-[10px] uppercase label-tracking text-stone-500 mt-1">
-              Trattoria · Pizzeria
-            </div>
-          </div>
+          <Logo className="h-9 w-auto text-stone-100" />
+          <Wordmark className="text-xl text-stone-100 hidden sm:inline-block" />
         </a>
 
         <nav className="hidden md:flex items-center gap-10">

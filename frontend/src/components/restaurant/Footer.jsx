@@ -1,4 +1,5 @@
 import { Instagram, Facebook } from "lucide-react";
+import { Logo, Wordmark } from "./Logo";
 
 export const Footer = () => {
   return (
@@ -9,15 +10,13 @@ export const Footer = () => {
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-12 gap-8 mb-16">
           <div className="col-span-12 md:col-span-5">
-            <div className="font-serif italic text-amber-600 text-3xl mb-2">
-              La Maria si Ion
-            </div>
-            <div className="text-[11px] uppercase label-tracking text-stone-500">
-              Trattoria · Pizzeria
+            <div className="flex items-center gap-3 text-stone-100 mb-3">
+              <Logo className="h-10 w-auto text-stone-100" />
+              <Wordmark className="text-3xl" />
             </div>
             <p className="mt-8 max-w-md text-stone-400 font-light text-sm leading-relaxed">
-              A small Italian table in Brera, Milano. Cooking from memory since
-              2012.
+              O masă caldă cu mâncare ca acasă — povești, mămăligă și un foc
+              care nu se stinge niciodată.
             </p>
           </div>
 

@@ -87,19 +87,26 @@ export const MenuSection = () => {
                       {item.name}
                     </h4>
                     <span className="dotted-leader" />
-                    <span className="font-serif text-amber-500 text-xl md:text-2xl">
-                      €{item.price}
+                    <span className="font-serif text-amber-500 text-xl md:text-2xl whitespace-nowrap">
+                      {item.price}
                     </span>
                   </div>
-                  <p className="mt-3 text-stone-400 text-sm md:text-base font-light max-w-2xl leading-relaxed">
-                    {item.description}
-                  </p>
+                  {item.description && (
+                    <p className="mt-3 text-stone-400 text-sm md:text-base font-light max-w-2xl leading-relaxed">
+                      {item.description}
+                    </p>
+                  )}
+                  {item.portion && (
+                    <p className="mt-2 text-[11px] uppercase label-tracking text-stone-600">
+                      {item.portion}
+                    </p>
+                  )}
                 </li>
               ))}
             </ul>
 
             <div className="mt-16 pt-10 border-t border-white/5 text-stone-500 text-xs uppercase label-tracking">
-              Tasting menu · Seven courses · €95 per person · pairing +€60
+              Meniul complet conține peste 90 de preparate · Prețurile sunt în lei
             </div>
           </div>
         </div>
