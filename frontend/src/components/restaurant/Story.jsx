@@ -1,7 +1,7 @@
 import useReveal from "../../hooks/useReveal";
 
 const ABOUT_IMG =
-  "https://mariasiion.ro/wp-content/uploads/2024/12/250341377_2091161227728040_3263187890321193339_n.jpg";
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Papana%C8%99i_Sinaia.jpg/960px-Papana%C8%99i_Sinaia.jpg";
 
 const stats = [
   { k: "5+", v: "Ani în Regie" },
@@ -26,7 +26,7 @@ export const Story = () => {
             <div className="relative aspect-[4/5] overflow-hidden">
               <img
                 src={ABOUT_IMG}
-                alt="Atmosfera de la La Maria și Ion"
+                alt="Papanași tradiționali cu vișine și smântână"
                 className="w-full h-full object-cover grayscale-[15%] hover:grayscale-0 hover:scale-105 transition-all duration-[1200ms]"
                 loading="lazy"
                 decoding="async"
