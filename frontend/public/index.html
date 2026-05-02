@@ -1,43 +1,104 @@
 <!doctype html>
-<html lang="en">
+<html lang="ro">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" content="A product of emergent.sh" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta name="theme-color" content="#0c0a09" />
+
+        <title>La Maria și Ion · Restaurant tradițional în Regie, București</title>
+        <meta
+            name="description"
+            content="Restaurant La Maria și Ion — bucătărie românească autentică pe terasa din Regie, București. Preparate la jar, mămăligă, vin la cană și atmosferă de neuitat. Splaiul Independenței 290."
+        />
+        <meta name="keywords" content="restaurant Regie, restaurant Bucuresti, terasa Regie, La Maria si Ion, mancare romaneasca, bucatarie romaneasca, Splaiul Independentei" />
+        <meta name="author" content="La Maria și Ion" />
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="restaurant.restaurant" />
+        <meta property="og:title" content="La Maria și Ion · Restaurant tradițional în Regie, București" />
+        <meta
+            property="og:description"
+            content="Bucătărie românească autentică, terasă în Regie, mâncare ca acasă. Splaiul Independenței 290 · Rezervări: 0753 473 781"
+        />
+        <meta property="og:image" content="https://mariasiion.ro/wp-content/uploads/2024/12/448453750_764204029256764_5345791775327686708_n-1024x767.jpg" />
+        <meta property="og:locale" content="ro_RO" />
+        <meta property="og:url" content="https://mariasiion.ro" />
+        <meta property="og:site_name" content="La Maria și Ion" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="La Maria și Ion · Restaurant tradițional în Regie" />
+        <meta name="twitter:description" content="Bucătărie românească autentică pe terasa din Regie, București." />
+        <meta name="twitter:image" content="https://mariasiion.ro/wp-content/uploads/2024/12/448453750_764204029256764_5345791775327686708_n-1024x767.jpg" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.svg" />
+
+        <!-- Performance: preconnect & preload -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet" />
-        <!--
-        manifest.json provides metadata used when your web app is installed on a
-        user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-        -->
-        <!--
-        Notice the use of %PUBLIC_URL% in the tags above.
-        It will be replaced with the URL of the `public` folder during the build.
-        Only files inside the `public` folder can be referenced from the HTML.
+        <link rel="preconnect" href="https://mariasiion.ro" />
+        <link rel="dns-prefetch" href="https://mariasiion.ro" />
+        <link rel="preload" as="image" href="https://mariasiion.ro/wp-content/uploads/2024/12/448453750_764204029256764_5345791775327686708_n-1024x767.jpg" fetchpriority="high" />
 
-        Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-        work correctly both with client-side routing and a non-root public URL.
-        Learn how to configure a non-root public URL by running `npm run build`.
-        -->
-        <title>Emergent | Fullstack App</title>
+        <!-- Fonts: subset to latin-ext for Romanian diacritics -->
+        <link
+            rel="preload"
+            as="style"
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap&subset=latin-ext"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap&subset=latin-ext"
+        />
+
+        <!-- JSON-LD: Restaurant schema for Google Rich Results -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Restaurant",
+                "name": "La Maria și Ion",
+                "image": "https://mariasiion.ro/wp-content/uploads/2024/12/448453750_764204029256764_5345791775327686708_n-1024x767.jpg",
+                "url": "https://mariasiion.ro",
+                "telephone": "+40753473781",
+                "email": "support@mariasiion.ro",
+                "priceRange": "$$",
+                "servesCuisine": ["Romanian", "Traditional", "Italian"],
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Splaiul Independenței 290",
+                    "addressLocality": "București",
+                    "addressRegion": "Sector 6",
+                    "addressCountry": "RO"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "44.4426",
+                    "longitude": "26.0517"
+                },
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                        "opens": "12:00",
+                        "closes": "24:00"
+                    }
+                ],
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.6",
+                    "reviewCount": "1200"
+                }
+            }
+        </script>
+
         <script>window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);</script>
         <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
     </head>
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
-        <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
         <a
             id="emergent-badge"
             target="_blank"
@@ -147,7 +208,7 @@
             })(document, window.posthog || []);
             posthog.init("phc_xAvL2Iq4tFmANRE7kzbKwaSqp1HJjN7x48s3vr0CMjs", {
                 api_host: "https://us.i.posthog.com",
-                person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well,
+                person_profiles: "identified_only",
                 session_recording: {
                     recordCrossOriginIframes: true,
                     capturePerformance: false,

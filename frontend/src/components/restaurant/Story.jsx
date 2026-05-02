@@ -1,7 +1,13 @@
 import useReveal from "../../hooks/useReveal";
 
 const ABOUT_IMG =
-  "https://mariasiion.ro/wp-content/uploads/2023/10/hobby-chef-making-fresh-tagliatelle-with-pasta-mac-2022-12-16-22-44-42-utc.jpg";
+  "https://mariasiion.ro/wp-content/uploads/2024/12/250341377_2091161227728040_3263187890321193339_n.jpg";
+
+const stats = [
+  { k: "5+", v: "Ani în Regie" },
+  { k: "150+", v: "Preparate de casă" },
+  { k: "200", v: "Locuri pe terasă" },
+];
 
 export const Story = () => {
   const ref = useReveal();
@@ -20,9 +26,10 @@ export const Story = () => {
             <div className="relative aspect-[4/5] overflow-hidden">
               <img
                 src={ABOUT_IMG}
-                alt="Bucătarul Maria și Ion în sala de mese"
-                className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 hover:scale-105 transition-all duration-[1200ms]"
+                alt="Atmosfera de la La Maria și Ion"
+                className="w-full h-full object-cover grayscale-[15%] hover:grayscale-0 hover:scale-105 transition-all duration-[1200ms]"
                 loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 ring-1 ring-inset ring-white/5" />
             </div>
@@ -41,34 +48,33 @@ export const Story = () => {
                 </span>
               </div>
               <h2 className="font-serif font-light text-stone-50 text-4xl md:text-6xl leading-[1.05] tracking-tight">
-                O odaie mică. <br />
-                <span className="italic text-stone-400">O inimă mare.</span>
+                O terasă mare. <br />
+                <span className="italic text-stone-400">O masă cu suflet.</span>
               </h2>
               <div className="mt-10 space-y-6 max-w-xl text-stone-300 text-base md:text-lg font-light leading-relaxed">
                 <p>
-                  La Maria și Ion s-a deschis pe o uliță liniștită, cu douăzeci
-                  și șase de scaune și o singură regulă — să gătim așa cum
-                  gătea bunica, cu focul în vatră, ferestrele larg deschise și
-                  radioul pornit.
+                  La Maria și Ion s-a deschis în Regie cu un gând simplu — să
+                  aducem mâncarea de acasă la oraș. Cu mămăligă încă fierbinte,
+                  cu pastramă pe jar și cu un cuptor cu lemne pornit în fiecare
+                  zi, încă de la prânz.
                 </p>
                 <p>
-                  Doisprezece ani mai târziu, aluatul tot la mână se frământă
-                  în zori, tochitura tot fierbe încet de dimineață până seara,
-                  iar lemnele pentru cuptor sosesc în fiecare marți de la un
-                  pădurar din Bucovina.
+                  Mai mult decât un restaurant, suntem locul unde studenții se
+                  întorc după ani de zile, unde familiile țin botezuri și
+                  aniversări, și unde vine Bucureștiul când îi e dor de gustul
+                  de bunici.
                 </p>
                 <p className="text-stone-400 italic font-serif text-xl md:text-2xl border-l border-amber-600 pl-6 mt-10">
-                  &bdquo;Noi nu inventăm. Noi ne aducem aminte.&rdquo;
+                  &bdquo;Noi nu inventăm. Noi gătim cum am învățat de acasă.&rdquo;
                 </p>
               </div>
 
               <div className="mt-14 grid grid-cols-3 gap-6 max-w-lg">
-                {[
-                  { k: "12", v: "Ani de când gătim" },
-                  { k: "90+", v: "Preparate de casă" },
-                  { k: "1", v: "Cuptor cu lemne" },
-                ].map((s) => (
-                  <div key={s.v} data-testid={`stat-${s.v.toLowerCase().replace(/\s/g, '-')}`}>
+                {stats.map((s) => (
+                  <div
+                    key={s.v}
+                    data-testid={`stat-${s.v.toLowerCase().replace(/\s/g, "-")}`}
+                  >
                     <div className="font-serif text-amber-500 text-4xl md:text-5xl">
                       {s.k}
                     </div>
