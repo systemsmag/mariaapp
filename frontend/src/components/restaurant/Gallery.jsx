@@ -2,24 +2,24 @@ import useReveal from "../../hooks/useReveal";
 
 const images = [
   {
-    url: "https://images.unsplash.com/photo-1750943036999-81e666b2296c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwzfHxkYXJrJTIwY2luZW1hdGljJTIwZmluZSUyMGRpbmluZyUyMGl0YWxpYW4lMjBmb29kfGVufDB8fHx8MTc3NzY2NzM0N3ww&ixlib=rb-4.1.0&q=85",
-    alt: "Plated dish at candlelight",
-    caption: "Plated · Service 21:08",
+    url: "https://mariasiion.ro/wp-content/uploads/2024/12/250341377_2091161227728040_3263187890321193339_n.jpg",
+    alt: "Preparat tradițional servit la La Maria și Ion",
+    caption: "Bucătărie · La Maria și Ion",
   },
   {
-    url: "https://images.unsplash.com/photo-1777576507182-476359466980?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxjaW5lbWF0aWMlMjByZXN0YXVyYW50JTIwaW50ZXJpb3IlMjBkYXJrfGVufDB8fHx8MTc3NzY2NzM0N3ww&ixlib=rb-4.1.0&q=85",
-    alt: "Restaurant bar with glasses",
-    caption: "The bar · Aperitivo",
+    url: "https://mariasiion.ro/wp-content/uploads/2023/10/prawns-roasted-on-grill-and-rice-2021-08-26-17-21-01-utc.jpg",
+    alt: "Creveți pe grătar cu orez",
+    caption: "Pe grătar · Direct din ceaun",
   },
   {
-    url: "https://images.unsplash.com/photo-1655685306705-2c24a18eb451?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwxfHxkYXJrJTIwY2luZW1hdGljJTIwZmluZSUyMGRpbmluZyUyMGl0YWxpYW4lMjBmb29kfGVufDB8fHx8MTc3NzY2NzM0N3ww&ixlib=rb-4.1.0&q=85",
-    alt: "Macro shot of the kitchen",
-    caption: "Pasta · Made by hand",
+    url: "https://mariasiion.ro/wp-content/uploads/2024/12/243823994_2067596680084495_454137217862327021_n.jpg",
+    alt: "Atmosfera din restaurant",
+    caption: "Atmosferă · La masă cu noi",
   },
   {
-    url: "https://images.unsplash.com/photo-1764358868789-400fb3d39fb7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwyfHxjaW5lbWF0aWMlMjByZXN0YXVyYW50JTIwaW50ZXJpb3IlMjBkYXJrfGVufDB8fHx8MTc3NzY2NzM0N3ww&ixlib=rb-4.1.0&q=85",
-    alt: "Single rose on a table",
-    caption: "Table 4 · Anniversary",
+    url: "https://mariasiion.ro/wp-content/uploads/2024/12/207960568_1990429787801185_154270849901701442_n.jpg",
+    alt: "Specialitate de la Maria și Ion",
+    caption: "Specialitate · Rețetă de casă",
   },
 ];
 
@@ -39,19 +39,19 @@ export const Gallery = () => {
             <div className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-amber-600" />
               <span className="text-[11px] uppercase label-tracking text-amber-500">
-                Galleria
+                Galerie
               </span>
             </div>
             <h2 className="font-serif font-light text-stone-50 text-4xl md:text-6xl leading-tight tracking-tight">
-              Light, low.
+              Lumină joasă.
               <br />
-              <span className="italic text-stone-400">Hands, busy.</span>
+              <span className="italic text-stone-400">Mâini harnice.</span>
             </h2>
           </div>
           <div className="col-span-12 md:col-span-4 md:col-start-9 md:pt-10 reveal">
             <p className="text-stone-400 text-base font-light leading-relaxed">
-              A few quiet moments from a Friday service. Photographed by our
-              friend Giulia, on film, on the way home.
+              Câteva clipe tihnite dintr-o seară de vineri. Fotografiate de
+              prietena noastră Ana, pe film, în drum spre casă.
             </p>
           </div>
         </div>

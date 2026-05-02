@@ -17,29 +17,29 @@ export const Contact = () => {
             <div className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-amber-600" />
               <span className="text-[11px] uppercase label-tracking text-amber-500">
-                Trovaci
+                Ne găsești
               </span>
             </div>
             <h2 className="font-serif font-light text-stone-50 text-5xl md:text-7xl leading-[0.95] tracking-tight">
-              Come for dinner.
+              Vino la cină.
               <br />
-              <span className="italic text-stone-400">Stay for the wine.</span>
+              <span className="italic text-stone-400">Rămâi pentru un pahar de vin.</span>
             </h2>
             <p className="mt-8 max-w-xl text-stone-400 text-base md:text-lg font-light leading-relaxed">
-              Reservations are encouraged but not required. Walk-ins welcome at
-              the bar from 18:30. For groups of six or more, please call us
-              directly.
+              Rezervările sunt recomandate, dar nu obligatorii. Te primim cu
+              drag și fără rezervare la bar, de la 12:00. Pentru grupuri mai
+              mari de șase persoane, te rugăm să ne suni direct.
             </p>
           </div>
 
           <div className="col-span-12 md:col-span-5 md:pt-6 reveal">
             <a
-              href="tel:+390212345678"
+              href="tel:+40753473781"
               data-testid="phone-cta"
               className="inline-flex items-center gap-3 px-8 py-4 bg-amber-600 hover:bg-amber-700 text-stone-950 text-xs uppercase label-tracking transition-colors"
             >
               <Phone className="w-4 h-4" />
-              +39 02 1234 5678
+              0753 473 781
             </a>
           </div>
         </div>
@@ -49,9 +49,9 @@ export const Contact = () => {
           <div className="col-span-12 md:col-span-7 reveal">
             <div className="relative aspect-[4/3] md:aspect-[3/2] overflow-hidden border border-stone-800">
               <iframe
-                title="La Maria si Ion location map"
+                title="Locația La Maria și Ion"
                 data-testid="location-map"
-                src="https://www.google.com/maps?q=Brera+Milano+Italy&output=embed"
+                src="https://www.google.com/maps?q=Splaiul+Independentei+290+Bucuresti+Complex+Studentesc+Regie&output=embed"
                 className="w-full h-full grayscale contrast-125 brightness-[0.7]"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -65,46 +65,46 @@ export const Contact = () => {
             <ul className="divide-y divide-white/5 border-y border-white/5">
               <InfoRow
                 icon={<MapPin className="w-4 h-4" />}
-                label="Address"
+                label="Adresă"
                 value={
                   <>
-                    Via dell&apos;Orso, 14
+                    Splaiul Independenței 290
                     <br />
-                    20121 Milano · Italia
+                    Complex Studențesc Regie, București
                   </>
                 }
                 testId="contact-address"
               />
               <InfoRow
                 icon={<Clock className="w-4 h-4" />}
-                label="Hours"
+                label="Program"
                 value={
                   <>
-                    Tue — Sun · 19:00 — 23:30
+                    Luni — Duminică
                     <br />
-                    Closed Mondays
+                    12:00 — 24:00
                   </>
                 }
                 testId="contact-hours"
               />
               <InfoRow
                 icon={<Phone className="w-4 h-4" />}
-                label="Telephone"
-                value="+39 02 1234 5678"
+                label="Telefon"
+                value="0753 473 781"
                 testId="contact-phone"
               />
               <InfoRow
                 icon={<Mail className="w-4 h-4" />}
                 label="Email"
-                value="ciao@lucenta.it"
+                value="support@mariasiion.ro"
                 testId="contact-email"
               />
             </ul>
 
             <div className="mt-10 text-[11px] uppercase label-tracking text-stone-500 leading-relaxed">
-              Dress code · Smart casual
+              Ținută · Lejeră, dar îngrijită
               <br />
-              Service charge · Included · Cash &amp; cards accepted
+              Bacșișul · Inclus · Acceptăm cash și card
             </div>
           </div>
         </div>

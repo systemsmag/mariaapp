@@ -6,10 +6,10 @@ const MENU_PDF_URL =
   "https://customer-assets.emergentagent.com/job_restaurant-io/artifacts/1se2sw4l_meniu%20%281%29.pdf";
 
 const links = [
-  { label: "Story", href: "#story" },
-  { label: "Menu", href: "#menu" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Visit", href: "#contact" },
+  { label: "Poveste", testid: "story", href: "#story" },
+  { label: "Meniu", testid: "menu", href: "#menu" },
+  { label: "Galerie", testid: "gallery", href: "#gallery" },
+  { label: "Contact", testid: "visit", href: "#contact" },
 ];
 
 export const Header = () => {
@@ -47,7 +47,7 @@ export const Header = () => {
             <a
               key={l.href}
               href={l.href}
-              data-testid={`nav-${l.label.toLowerCase()}-link`}
+              data-testid={`nav-${l.testid}-link`}
               className="text-xs uppercase label-tracking text-stone-300 hover:text-amber-500 transition-colors underline-animate"
             >
               {l.label}
@@ -64,7 +64,7 @@ export const Header = () => {
           className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-xs uppercase label-tracking border border-stone-700 text-stone-100 hover:bg-amber-600 hover:border-amber-600 hover:text-stone-950 transition-colors"
         >
           <Download className="w-3.5 h-3.5" />
-          Download Menu
+          Descarcă Meniul
         </a>
 
         <button
@@ -90,7 +90,7 @@ export const Header = () => {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                data-testid={`mobile-nav-${l.label.toLowerCase()}-link`}
+                data-testid={`mobile-nav-${l.testid}-link`}
                 className="text-sm uppercase label-tracking text-stone-200"
               >
                 {l.label}
@@ -106,7 +106,7 @@ export const Header = () => {
               className="inline-flex items-center justify-center gap-2 px-5 py-3 text-xs uppercase label-tracking border border-amber-600 text-amber-500 mt-2"
             >
               <Download className="w-3.5 h-3.5" />
-              Download Menu
+              Descarcă Meniul
             </a>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import useReveal from "../../hooks/useReveal";
 
 const ABOUT_IMG =
-  "https://images.unsplash.com/photo-1777221183847-31eed7010f4d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHw0fHxjaW5lbWF0aWMlMjByZXN0YXVyYW50JTIwaW50ZXJpb3IlMjBkYXJrfGVufDB8fHx8MTc3NzY2NzM0N3ww&ixlib=rb-4.1.0&q=85";
+  "https://mariasiion.ro/wp-content/uploads/2023/10/hobby-chef-making-fresh-tagliatelle-with-pasta-mac-2022-12-16-22-44-42-utc.jpg";
 
 export const Story = () => {
   const ref = useReveal();
@@ -20,14 +20,14 @@ export const Story = () => {
             <div className="relative aspect-[4/5] overflow-hidden">
               <img
                 src={ABOUT_IMG}
-                alt="Chef Matteo Ricci in the dining room"
+                alt="Bucătarul Maria și Ion în sala de mese"
                 className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 hover:scale-105 transition-all duration-[1200ms]"
                 loading="lazy"
               />
               <div className="absolute inset-0 ring-1 ring-inset ring-white/5" />
             </div>
             <div className="mt-6 text-xs uppercase label-tracking text-stone-500">
-              Chef · Matteo Ricci
+              Gazdele · Maria și Ion
             </div>
           </div>
 
@@ -37,35 +37,36 @@ export const Story = () => {
               <div className="flex items-center gap-3 mb-8">
                 <span className="h-px w-10 bg-amber-600" />
                 <span className="text-[11px] uppercase label-tracking text-amber-500">
-                  La nostra storia
+                  Povestea noastră
                 </span>
               </div>
               <h2 className="font-serif font-light text-stone-50 text-4xl md:text-6xl leading-[1.05] tracking-tight">
-                A small room. <br />
-                <span className="italic text-stone-400">A loud heart.</span>
+                O odaie mică. <br />
+                <span className="italic text-stone-400">O inimă mare.</span>
               </h2>
               <div className="mt-10 space-y-6 max-w-xl text-stone-300 text-base md:text-lg font-light leading-relaxed">
                 <p>
-                  La Maria si Ion opened on a quiet street in Brera with twenty-six
-                  seats and one rule — cook the way Matteo&rsquo;s grandmother
-                  cooked, in Bari, with the windows open and the radio on.
+                  La Maria și Ion s-a deschis pe o uliță liniștită, cu douăzeci
+                  și șase de scaune și o singură regulă — să gătim așa cum
+                  gătea bunica, cu focul în vatră, ferestrele larg deschise și
+                  radioul pornit.
                 </p>
                 <p>
-                  Twelve years later the dough is still mixed by hand at dawn,
-                  the ragù still simmers from morning till night, and the wood
-                  for the oven still arrives every Tuesday from a forester in
-                  Lombardy.
+                  Doisprezece ani mai târziu, aluatul tot la mână se frământă
+                  în zori, tochitura tot fierbe încet de dimineață până seara,
+                  iar lemnele pentru cuptor sosesc în fiecare marți de la un
+                  pădurar din Bucovina.
                 </p>
                 <p className="text-stone-400 italic font-serif text-xl md:text-2xl border-l border-amber-600 pl-6 mt-10">
-                  &ldquo;We don&rsquo;t reinvent. We remember.&rdquo;
+                  &bdquo;Noi nu inventăm. Noi ne aducem aminte.&rdquo;
                 </p>
               </div>
 
               <div className="mt-14 grid grid-cols-3 gap-6 max-w-lg">
                 {[
-                  { k: "12", v: "Years open" },
-                  { k: "72h", v: "Dough rise" },
-                  { k: "1", v: "Wood oven" },
+                  { k: "12", v: "Ani de când gătim" },
+                  { k: "90+", v: "Preparate de casă" },
+                  { k: "1", v: "Cuptor cu lemne" },
                 ].map((s) => (
                   <div key={s.v} data-testid={`stat-${s.v.toLowerCase().replace(/\s/g, '-')}`}>
                     <div className="font-serif text-amber-500 text-4xl md:text-5xl">

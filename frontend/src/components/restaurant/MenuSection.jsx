@@ -21,20 +21,20 @@ export const MenuSection = () => {
             <div className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-amber-600" />
               <span className="text-[11px] uppercase label-tracking text-amber-500">
-                Il Menù
+                Meniul casei
               </span>
             </div>
             <h2 className="font-serif font-light text-stone-50 text-5xl md:text-7xl leading-[0.95] tracking-tight">
-              An evening,
+              O seară,
               <br />
-              <span className="italic text-stone-400">in courses.</span>
+              <span className="italic text-stone-400">cu felurile la rând.</span>
             </h2>
           </div>
           <div className="col-span-12 md:col-span-7 md:col-start-6 md:pt-6 reveal">
             <p className="text-stone-300 text-base md:text-lg font-light leading-relaxed max-w-xl">
-              Our kitchen changes with the seasons, the markets, and the
-              fishermen who answer their phones early. Below is what we&rsquo;re
-              serving tonight — choose three, choose seven, share everything.
+              Bucătăria noastră se schimbă cu anotimpurile, cu piețele și cu
+              pescarii care răspund la telefon dis-de-dimineață. Mai jos e ce
+              gătim astăzi — alege trei, alege șapte, împărțim totul.
             </p>
           </div>
         </div>

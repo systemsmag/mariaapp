@@ -2,7 +2,7 @@ import { ChevronDown } from "lucide-react";
 import useReveal from "../../hooks/useReveal";
 
 const HERO_IMG =
-  "https://images.unsplash.com/photo-1709548145082-04d0cde481d4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxjaW5lbWF0aWMlMjByZXN0YXVyYW50JTIwaW50ZXJpb3IlMjBkYXJrfGVufDB8fHx8MTc3NzY2NzM0N3ww&ixlib=rb-4.1.0&q=85";
+  "https://mariasiion.ro/wp-content/uploads/2024/12/448453750_764204029256764_5345791775327686708_n-1024x767.jpg";
 
 export const Hero = () => {
   const ref = useReveal();
@@ -32,20 +32,20 @@ export const Hero = () => {
             <div className="flex items-center gap-3 mb-8">
               <span className="h-px w-12 bg-amber-600" />
               <span className="text-[11px] uppercase label-tracking text-amber-500">
-                Est. MMXII · Brera, Milano
+                Bun venit · La masă cu noi
               </span>
             </div>
             <h1 className="font-serif font-light text-stone-50 leading-[0.95] tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-[7.5rem]">
-              Fuoco,
+              La Maria
               <br />
-              <span className="italic text-amber-500/95">memoria</span>,
+              <span className="italic text-amber-500/95">și</span>
               <br />
-              farina.
+              Ion.
             </h1>
             <p className="mt-10 max-w-xl text-stone-300 text-base md:text-lg font-light leading-relaxed">
-              An Italian table built around a wood-fired hearth. Nonna&rsquo;s
-              recipes, hand-pulled mozzarella, and a 72-hour dough — served
-              quietly, in candlelight.
+              O masă românească, în jurul jarului viu. Rețete de la bunici,
+              mămăligă proaspătă și un cuptor care n-adoarme niciodată — servite
+              tihnit, la lumina lumânării.
             </p>
             <div className="mt-12 flex flex-wrap gap-4">
               <a
@@ -53,7 +53,7 @@ export const Hero = () => {
                 data-testid="hero-reserve-cta"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-amber-600 hover:bg-amber-700 text-stone-950 text-xs uppercase label-tracking transition-colors"
               >
-                Reserve a table
+                Rezervă o masă
                 <ChevronDown className="w-4 h-4 -rotate-90" />
               </a>
               <a
@@ -61,7 +61,7 @@ export const Hero = () => {
                 data-testid="hero-menu-cta"
                 className="inline-flex items-center gap-3 px-8 py-4 border border-stone-600 text-stone-100 hover:border-amber-600 hover:text-amber-500 text-xs uppercase label-tracking transition-colors"
               >
-                View the menu
+                Vezi meniul
               </a>
             </div>
           </div>
@@ -70,16 +70,16 @@ export const Hero = () => {
         {/* Bottom meta strip */}
         <div className="hidden md:flex items-end justify-between pb-10 text-xs uppercase label-tracking text-stone-400">
           <div>
-            <div className="text-stone-500 mb-2">Dinner</div>
-            <div className="text-stone-200">Tue — Sun · 19:00 — 23:30</div>
+            <div className="text-stone-500 mb-2">Program</div>
+            <div className="text-stone-200">Luni — Duminică · 12:00 — 24:00</div>
           </div>
           <div className="flex items-center gap-3 text-stone-300 animate-pulse">
             <ChevronDown className="w-4 h-4" />
-            <span>Scroll</span>
+            <span>Coboară</span>
           </div>
           <div className="text-right">
-            <div className="text-stone-500 mb-2">Find us</div>
-            <div className="text-stone-200">Via dell&apos;Orso 14, Milano</div>
+            <div className="text-stone-500 mb-2">Ne găsești</div>
+            <div className="text-stone-200">Splaiul Independenței 290, Regie</div>
           </div>
         </div>
       </div>

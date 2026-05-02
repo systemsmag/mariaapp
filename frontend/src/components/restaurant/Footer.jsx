@@ -22,18 +22,18 @@ export const Footer = () => {
 
           <div className="col-span-6 md:col-span-3 md:col-start-7">
             <div className="text-[11px] uppercase label-tracking text-stone-500 mb-5">
-              Visit
+              Vino la noi
             </div>
             <ul className="space-y-2 text-stone-200 font-light">
-              <li>Via dell&apos;Orso 14</li>
-              <li>20121 Milano</li>
-              <li className="text-stone-400">+39 02 1234 5678</li>
+              <li>Splaiul Independenței 290</li>
+              <li>Complex Studențesc Regie, București</li>
+              <li className="text-stone-400">0753 473 781</li>
             </ul>
           </div>
 
           <div className="col-span-6 md:col-span-2">
             <div className="text-[11px] uppercase label-tracking text-stone-500 mb-5">
-              Follow
+              Urmărește-ne
             </div>
             <ul className="space-y-3">
               <li>
@@ -63,19 +63,19 @@ export const Footer = () => {
         </div>
 
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] uppercase label-tracking text-stone-500">
-          <div>© {new Date().getFullYear()} La Maria si Ion · All rights reserved</div>
+          <div>© {new Date().getFullYear()} La Maria și Ion · Toate drepturile rezervate</div>
           <div className="flex items-center gap-6">
             <a href="#top" className="hover:text-amber-500 transition-colors">
-              Back to top
+              Sus, la început
             </a>
-            <span>P.IVA 0123456 7890</span>
+            <span>CUI · RO12345678</span>
           </div>
         </div>
 
         {/* Massive wordmark */}
         <div className="mt-20 md:mt-32 select-none pointer-events-none">
           <div className="font-serif italic text-stone-900 text-[18vw] leading-[0.85] tracking-tighter whitespace-nowrap">
-            La Maria si Ion.
+            La Maria și Ion.
           </div>
         </div>
       </div>
