@@ -1,4 +1,5 @@
 import { ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 import useReveal from "../../hooks/useReveal";
 
 const HERO_IMG =
@@ -56,13 +57,13 @@ export const Hero = () => {
                 Rezervă o masă
                 <ChevronDown className="w-4 h-4 -rotate-90" />
               </a>
-              <a
-                href="#menu"
+              <Link
+                to="/meniu"
                 data-testid="hero-menu-cta"
                 className="inline-flex items-center gap-3 px-8 py-4 border border-stone-600 text-stone-100 hover:border-amber-600 hover:text-amber-500 text-xs uppercase label-tracking transition-colors"
               >
                 Vezi meniul
-              </a>
+              </Link>
             </div>
           </div>
         </div>

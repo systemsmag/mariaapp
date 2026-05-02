@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { menuData } from "../../data/menu";
 import useReveal from "../../hooks/useReveal";
 
@@ -105,8 +106,17 @@ export const MenuSection = () => {
               ))}
             </ul>
 
-            <div className="mt-16 pt-10 border-t border-white/5 text-stone-500 text-xs uppercase label-tracking">
-              Meniul complet conține peste 90 de preparate · Prețurile sunt în lei
+            <div className="mt-16 pt-10 border-t border-white/5 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+              <div className="text-stone-500 text-xs uppercase label-tracking">
+                Acestea sunt câteva specialități · Meniul complet conține peste 90 de preparate
+              </div>
+              <Link
+                to="/meniu"
+                data-testid="menu-section-full-cta"
+                className="shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-amber-600 hover:bg-amber-700 text-stone-950 text-xs uppercase label-tracking transition-colors"
+              >
+                Vezi meniul complet →
+              </Link>
             </div>
           </div>
         </div>

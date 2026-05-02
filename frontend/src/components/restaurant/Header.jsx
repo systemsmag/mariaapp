@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu as MenuIcon, X, Download } from "lucide-react";
 import { Logo, Wordmark } from "./Logo";
 
@@ -6,11 +7,25 @@ const MENU_PDF_URL =
   "https://customer-assets.emergentagent.com/job_restaurant-io/artifacts/1se2sw4l_meniu%20%281%29.pdf";
 
 const links = [
-  { label: "Poveste", testid: "story", href: "#story" },
-  { label: "Meniu", testid: "menu", href: "#menu" },
-  { label: "Galerie", testid: "gallery", href: "#gallery" },
-  { label: "Contact", testid: "visit", href: "#contact" },
+  { label: "Poveste", testid: "story", href: "/#story", type: "hash" },
+  { label: "Meniu", testid: "menu", href: "/meniu", type: "route" },
+  { label: "Galerie", testid: "gallery", href: "/#gallery", type: "hash" },
+  { label: "Contact", testid: "visit", href: "/#contact", type: "hash" },
 ];
+
+const NavLink = ({ link, className, onClick, testIdPrefix = "nav" }) => {
+  const testId = `${testIdPrefix}-${link.testid}-link`;
+  return (
+    <Link
+      to={link.href}
+      data-testid={testId}
+      onClick={onClick}
+      className={className}
+    >
+      {link.label}
+    </Link>
+  );
+};
 
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -33,25 +48,22 @@ export const Header = () => {
       }`}
     >
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
-        <a
-          href="#top"
+        <Link
+          to="/"
           data-testid="logo-link"
           className="flex items-center gap-3 group text-stone-100"
         >
           <Logo className="h-9 w-auto text-stone-100" />
           <Wordmark className="text-xl text-stone-100 hidden sm:inline-block" />
-        </a>
+        </Link>
 
         <nav className="hidden md:flex items-center gap-10">
           {links.map((l) => (
-            <a
+            <NavLink
               key={l.href}
-              href={l.href}
-              data-testid={`nav-${l.testid}-link`}
+              link={l}
               className="text-xs uppercase label-tracking text-stone-300 hover:text-amber-500 transition-colors underline-animate"
-            >
-              {l.label}
-            </a>
+            />
           ))}
         </nav>
 
@@ -86,15 +98,13 @@ export const Header = () => {
         >
           <div className="px-6 py-8 flex flex-col gap-6">
             {links.map((l) => (
-              <a
+              <NavLink
                 key={l.href}
-                href={l.href}
+                link={l}
                 onClick={() => setOpen(false)}
-                data-testid={`mobile-nav-${l.testid}-link`}
+                testIdPrefix="mobile-nav"
                 className="text-sm uppercase label-tracking text-stone-200"
-              >
-                {l.label}
-              </a>
+              />
             ))}
             <a
               href={MENU_PDF_URL}
