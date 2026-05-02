@@ -9,6 +9,7 @@ import { Gallery } from "@/components/restaurant/Gallery";
 import { Contact } from "@/components/restaurant/Contact";
 import { Footer } from "@/components/restaurant/Footer";
 import MenuPage from "@/pages/MenuPage";
+import LegalPage from "@/pages/LegalPage";
 
 const HashScroller = () => {
   const { hash, pathname } = useLocation();
@@ -57,6 +58,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/meniu" element={<MenuPage />} />
+          <Route path="/termeni-si-conditii" element={<LegalPage slug="termeni" />} />
+          <Route path="/cookies" element={<LegalPage slug="cookies" />} />
+          <Route path="/confidentialitate" element={<LegalPage slug="confidentialitate" />} />
         </Routes>
       </BrowserRouter>
     </div>
