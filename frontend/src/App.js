@@ -11,6 +11,7 @@ import { Contact } from "@/components/restaurant/Contact";
 import { Footer } from "@/components/restaurant/Footer";
 import { StickyCallButton } from "@/components/restaurant/StickyCallButton";
 import { CookieBanner } from "@/components/restaurant/CookieBanner";
+import { ParallaxBand } from "@/components/restaurant/ParallaxBand";
 
 // Code-split heavier secondary pages
 const MenuPage = lazy(() => import("@/pages/MenuPage"));
@@ -74,8 +75,24 @@ const Home = () => {
       <Header />
       <Hero />
       <Story />
+      <ParallaxBand
+        testId="parallax-band-1"
+        image="https://mariasiion.ro/wp-content/uploads/2023/10/prawns-roasted-on-grill-and-rice-2021-08-26-17-21-01-utc.jpg"
+        alt="Pe grătar la La Maria si Ion"
+        caption="Noi nu inventăm. Gătim cum am învățat de acasă."
+        attribution="Maria și Ion"
+        height="tall"
+      />
       <MenuSection />
       <Gallery />
+      <ParallaxBand
+        testId="parallax-band-2"
+        image="https://mariasiion.ro/wp-content/uploads/2024/12/448453750_764204029256764_5345791775327686708_n-1024x767.jpg"
+        alt="Terasa La Maria si Ion seara"
+        caption="O terasă mare, o masă cu suflet."
+        attribution="Regie, București"
+        height="short"
+      />
       <Reviews />
       <Contact />
       <Footer />
