@@ -77,8 +77,8 @@ const Home = () => {
       <Story />
       <ParallaxBand
         testId="parallax-band-1"
-        image="https://mariasiion.ro/wp-content/uploads/2023/10/prawns-roasted-on-grill-and-rice-2021-08-26-17-21-01-utc.jpg"
-        alt="Pe grătar la La Maria si Ion"
+        image="https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=1600&q=80"
+        alt="Penne carbonara"
         caption="Noi nu inventăm. Gătim cum am învățat de acasă."
         attribution="Maria și Ion"
         height="tall"
