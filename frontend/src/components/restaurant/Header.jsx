@@ -55,11 +55,11 @@ export const Header = () => {
           aria-label="La Maria si Ion — acasă"
         >
           <img
-            src="https://mariasiion.ro/wp-content/uploads/2024/12/0.jpg"
+            src="https://customer-assets.emergentagent.com/job_restaurant-io/artifacts/v19w2nb8_logo.png"
             alt="La Maria si Ion"
-            width="160"
-            height="64"
-            className="h-12 md:h-14 w-auto object-contain mix-blend-screen brightness-110"
+            width="180"
+            height="72"
+            className="h-14 md:h-16 w-auto object-contain"
             loading="eager"
             decoding="async"
           />
