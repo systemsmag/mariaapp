@@ -1,36 +1,12 @@
 import { Instagram, Facebook } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Logo, Wordmark } from "./Logo";
 
-// ANPC compliance badges (Romanian consumer-protection)
-// Using inline styled badges so they always render — replicating the
-// standard look used on Romanian commercial sites.
-const AnpcBadge = ({ href, label, sub, testId }) => (
-  <a
-    href={href}
-    target="_blank"
-    rel="noreferrer"
-    data-testid={testId}
-    title={label}
-    className="group flex items-center gap-3 bg-white text-stone-900 pl-3 pr-4 py-2 rounded-sm shadow-sm hover:shadow-md transition-shadow w-[170px]"
-  >
-    {/* Romanian flag stripe */}
-    <span className="flex h-9 w-1.5 shrink-0 overflow-hidden rounded-[1px]">
-      <span className="flex-1 bg-[#002B7F]" />
-      <span className="flex-1 bg-[#FCD116]" />
-      <span className="flex-1 bg-[#CE1126]" />
-    </span>
-    <span className="leading-tight">
-      <span className="block font-semibold tracking-wide text-[10px] text-[#002B7F]">
-        ANPC
-      </span>
-      <span className="block font-bold text-xs text-stone-900">{label}</span>
-      <span className="block text-[9px] text-stone-500 leading-tight">
-        {sub}
-      </span>
-    </span>
-  </a>
-);
+const RESTAURANT_LOGO =
+  "https://customer-assets.emergentagent.com/job_restaurant-io/artifacts/v19w2nb8_logo.png";
+const ANPC_SAL =
+  "https://customer-assets.emergentagent.com/job_restaurant-io/artifacts/byiwjmgo_anpc-sal.png";
+const ANPC_SOL =
+  "https://customer-assets.emergentagent.com/job_restaurant-io/artifacts/xp6ed1mb_anpc-sol.png";
 
 export const Footer = () => {
   return (
@@ -42,10 +18,17 @@ export const Footer = () => {
         {/* Top grid: brand · address · social */}
         <div className="grid grid-cols-12 gap-8 mb-16">
           <div className="col-span-12 md:col-span-5">
-            <div className="flex items-center gap-3 text-stone-100 mb-3">
-              <Logo className="h-10 w-auto text-stone-100" />
-              <Wordmark className="text-3xl" />
-            </div>
+            <Link to="/" data-testid="footer-logo-link" className="inline-block">
+              <img
+                src={RESTAURANT_LOGO}
+                alt="La Maria si Ion"
+                width="220"
+                height="88"
+                className="h-20 md:h-24 w-auto object-contain"
+                loading="lazy"
+                decoding="async"
+              />
+            </Link>
             <p className="mt-8 max-w-md text-stone-400 font-light text-sm leading-relaxed">
               O masă caldă cu mâncare ca acasă — povești, mămăligă și un foc
               care nu se stinge niciodată.
@@ -142,18 +125,42 @@ export const Footer = () => {
               Protecția consumatorului
             </div>
             <div className="flex flex-wrap md:justify-end items-center gap-3">
-              <AnpcBadge
+              <a
                 href="https://anpc.ro/ce-este-sal/"
-                label="SAL"
-                sub="Soluționare Alternativă"
-                testId="anpc-sal-badge"
-              />
-              <AnpcBadge
+                target="_blank"
+                rel="noreferrer"
+                data-testid="anpc-sal-badge"
+                title="ANPC — Soluționarea Alternativă a Litigiilor"
+                className="block hover:opacity-90 transition-opacity"
+              >
+                <img
+                  src={ANPC_SAL}
+                  alt="ANPC — Soluționarea Alternativă a Litigiilor"
+                  width="200"
+                  height="60"
+                  className="h-12 md:h-14 w-auto object-contain"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <a
                 href="https://ec.europa.eu/consumers/odr"
-                label="SOL"
-                sub="Soluționare Online"
-                testId="anpc-sol-badge"
-              />
+                target="_blank"
+                rel="noreferrer"
+                data-testid="anpc-sol-badge"
+                title="ANPC — Soluționarea Online a Litigiilor"
+                className="block hover:opacity-90 transition-opacity"
+              >
+                <img
+                  src={ANPC_SOL}
+                  alt="ANPC — Soluționarea Online a Litigiilor"
+                  width="200"
+                  height="60"
+                  className="h-12 md:h-14 w-auto object-contain"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
             </div>
           </div>
         </div>
