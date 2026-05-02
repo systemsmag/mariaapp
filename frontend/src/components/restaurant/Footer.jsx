@@ -188,14 +188,13 @@ export const Footer = () => {
               y="115"
               textLength="900"
               lengthAdjust="spacingAndGlyphs"
-              fontFamily="'Cormorant Garamond', serif"
-              fontStyle="italic"
-              fontWeight="400"
+              fontFamily="'Fraunces', 'Cormorant Garamond', serif"
+              fontWeight="500"
               fontSize="140"
               fill="#1c1917"
               letterSpacing="-2"
             >
-              La Maria și Ion.
+              La Maria si Ion
             </text>
           </svg>
         </div>

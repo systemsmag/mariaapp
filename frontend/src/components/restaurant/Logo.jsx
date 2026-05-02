@@ -66,7 +66,10 @@ export const Logo = ({ className = "h-9 w-auto", color = "#d97706" }) => (
 );
 
 export const Wordmark = ({ className = "" }) => (
-  <span className={`font-serif italic tracking-tight ${className}`}>
-    La Maria <span className="text-amber-600">&amp;</span> Ion
+  <span
+    className={`font-display tracking-tight ${className}`}
+    style={{ fontWeight: 500 }}
+  >
+    La Maria si Ion
   </span>
 );

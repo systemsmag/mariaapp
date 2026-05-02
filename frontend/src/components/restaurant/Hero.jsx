@@ -43,10 +43,8 @@ export const Hero = () => {
               </span>
             </div>
 
-            <h1 className="font-serif font-light text-stone-50 leading-[0.92] tracking-tight text-6xl sm:text-7xl md:text-8xl lg:text-[10rem]">
-              La Maria
-              <span className="italic text-amber-500/95"> &amp; </span>
-              Ion.
+            <h1 className="font-display font-medium text-stone-50 leading-[0.92] tracking-tight text-6xl sm:text-7xl md:text-8xl lg:text-[9rem]">
+              La Maria si Ion
             </h1>
 
             <p className="mt-8 max-w-xl text-stone-300 text-base md:text-lg font-light leading-relaxed">

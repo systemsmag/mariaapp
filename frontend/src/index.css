@@ -65,6 +65,11 @@ body {
     .font-sans {
         font-family: 'Manrope', sans-serif;
     }
+    .font-display {
+        font-family: 'Fraunces', 'Cormorant Garamond', serif;
+        font-optical-sizing: auto;
+        font-variation-settings: "SOFT" 30, "WONK" 0;
+    }
     .label-tracking {
         letter-spacing: 0.28em;
     }
