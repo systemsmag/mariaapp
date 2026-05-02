@@ -51,10 +51,18 @@ export const Header = () => {
         <Link
           to="/"
           data-testid="logo-link"
-          className="flex items-center gap-3 group text-stone-100"
+          className="flex items-center gap-3 group"
+          aria-label="La Maria si Ion — acasă"
         >
-          <Logo className="h-9 w-auto text-stone-100" />
-          <Wordmark className="text-xl text-stone-100 hidden sm:inline-block" />
+          <img
+            src="https://mariasiion.ro/wp-content/uploads/2024/12/0.jpg"
+            alt="La Maria si Ion"
+            width="160"
+            height="64"
+            className="h-12 md:h-14 w-auto object-contain mix-blend-screen brightness-110"
+            loading="eager"
+            decoding="async"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">
