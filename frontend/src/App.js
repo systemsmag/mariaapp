@@ -15,6 +15,7 @@ import { ParallaxBand } from "@/components/restaurant/ParallaxBand";
 
 // Code-split heavier secondary pages
 const MenuPage = lazy(() => import("@/pages/MenuPage"));
+const EventsPage = lazy(() => import("@/pages/EventsPage"));
 const LegalPage = lazy(() => import("@/pages/LegalPage"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
@@ -44,6 +45,7 @@ const HashScroller = () => {
 const titles = {
   "/": "La Maria și Ion · Restaurant tradițional în Regie, București",
   "/meniu": "Meniul complet · La Maria și Ion",
+  "/evenimente": "Evenimente · La Maria și Ion",
   "/termeni-si-conditii": "Termeni și Condiții · La Maria și Ion",
   "/cookies": "Politica de Cookies · La Maria și Ion",
   "/confidentialitate": "Politica de Confidențialitate · La Maria și Ion",
@@ -110,6 +112,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/meniu" element={<MenuPage />} />
+            <Route path="/evenimente" element={<EventsPage />} />
             <Route path="/termeni-si-conditii" element={<LegalPage slug="termeni" />} />
             <Route path="/cookies" element={<LegalPage slug="cookies" />} />
             <Route path="/confidentialitate" element={<LegalPage slug="confidentialitate" />} />

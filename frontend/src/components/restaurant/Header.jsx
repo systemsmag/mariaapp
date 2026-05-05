@@ -9,6 +9,7 @@ const MENU_PDF_URL =
 const links = [
   { label: "Poveste", testid: "story", href: "/#story", type: "hash" },
   { label: "Meniu", testid: "menu", href: "/meniu", type: "route" },
+  { label: "Evenimente", testid: "events", href: "/evenimente", type: "route" },
   { label: "Galerie", testid: "gallery", href: "/#gallery", type: "hash" },
   { label: "Contact", testid: "visit", href: "/#contact", type: "hash" },
 ];
