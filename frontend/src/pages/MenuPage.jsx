@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Download } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { fullMenu } from "../data/menuFull";
 import { Header } from "../components/restaurant/Header";
 import { Footer } from "../components/restaurant/Footer";
-
-const MENU_PDF_URL = "http://mariasiion.ro/meniu.pdf";
 
 const MenuItem = ({ item }) => (
   <li
@@ -119,20 +117,6 @@ export default function MenuPage() {
                 Toate preparatele, cu gramaje și prețuri, exact așa cum le
                 găsești pe masa noastră. Prețurile sunt în lei.
               </p>
-            </div>
-
-            <div className="col-span-12 md:col-span-4 flex md:justify-end items-end">
-              <a
-                href={MENU_PDF_URL}
-                target="_blank"
-                rel="noreferrer"
-                download="meniu-la-maria-si-ion.pdf"
-                data-testid="full-menu-download-pdf"
-                className="inline-flex items-center gap-2 px-6 py-3 border border-stone-700 text-stone-100 hover:bg-amber-600 hover:border-amber-600 hover:text-stone-950 text-xs uppercase label-tracking transition-colors"
-              >
-                <Download className="w-4 h-4" />
-                Descarcă PDF
-              </a>
             </div>
           </div>
         </div>
