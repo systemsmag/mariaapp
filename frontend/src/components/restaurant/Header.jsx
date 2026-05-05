@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import { Menu as MenuIcon, X, Download } from "lucide-react";
 import { Logo, Wordmark } from "./Logo";
 
-const MENU_PDF_URL =
-  "https://customer-assets.emergentagent.com/job_restaurant-io/artifacts/1se2sw4l_meniu%20%281%29.pdf";
+const MENU_PDF_URL = "http://mariasiion.ro/meniu.pdf";
 
 const links = [
   { label: "Poveste", testid: "story", href: "/#story", type: "hash" },

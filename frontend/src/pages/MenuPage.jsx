@@ -5,8 +5,7 @@ import { fullMenu } from "../data/menuFull";
 import { Header } from "../components/restaurant/Header";
 import { Footer } from "../components/restaurant/Footer";
 
-const MENU_PDF_URL =
-  "https://customer-assets.emergentagent.com/job_restaurant-io/artifacts/el3512v8_meniu%20%281%29.pdf";
+const MENU_PDF_URL = "http://mariasiion.ro/meniu.pdf";
 
 const MenuItem = ({ item }) => (
   <li

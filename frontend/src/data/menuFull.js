@@ -156,10 +156,10 @@ export const fullMenu = [
         id: "paste",
         title: "Paste",
         items: [
-          { name: "Penne siciliene cu creveți", description: "penne, creveți, usturoi, ceapă verde, sos tomate, roșii decojite", portion: "400g", price: "44 lei" },
-          { name: "Penne siciliene quattro formaggi", description: "penne, amestec brânză, gran cucina, gorgonzola, rogueford", portion: "400g", price: "39 lei" },
-          { name: "Penne siciliene cu sos carbonara", description: "penne, șuncă, amestec brânză, ou, gran cucina", portion: "400g", price: "36 lei" },
-          { name: "Penne siciliene Arabiata", description: "penne, sos tomate, usturoi, ardei iute, busuioc, oregano, ulei măsline", portion: "400g", price: "35 lei" },
+          { name: "Penne cu creveți", description: "penne, creveți, usturoi, ceapă verde, sos tomate, roșii decojite", portion: "400g", price: "44 lei" },
+          { name: "Penne quattro formaggi", description: "penne, amestec brânză, gran cucina, gorgonzola, rogueford", portion: "400g", price: "39 lei" },
+          { name: "Penne cu sos carbonara", description: "penne, șuncă, amestec brânză, ou, gran cucina", portion: "400g", price: "36 lei" },
+          { name: "Penne Arabiata", description: "penne, sos tomate, usturoi, ardei iute, busuioc, oregano, ulei măsline", portion: "400g", price: "35 lei" },
         ],
       },
       {

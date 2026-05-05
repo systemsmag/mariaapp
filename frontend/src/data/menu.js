@@ -223,19 +223,19 @@ export const menuData = [
     subtitle: "Din apă și din făină",
     items: [
       {
-        name: "Penne siciliene cu creveți",
+        name: "Penne cu creveți",
         description: "Penne, creveți, usturoi, ceapă verde, sos tomate",
         portion: "400g",
         price: "44 lei",
       },
       {
-        name: "Penne siciliene quattro formaggi",
+        name: "Penne quattro formaggi",
         description: "Amestec brânzeturi, gran cucina, gorgonzola, rogueford",
         portion: "400g",
         price: "39 lei",
       },
       {
-        name: "Penne siciliene Arabiata",
+        name: "Penne Arabiata",
         description: "Sos tomate, usturoi, ardei iute, busuioc, oregano, ulei măsline",
         portion: "400g",
         price: "35 lei",

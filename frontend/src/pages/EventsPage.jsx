@@ -12,7 +12,7 @@ const events = [
     artist: "Costel Biju",
     title: "Friday Night Party · Invitat Special",
     date: "Vineri, 8 Mai",
-    time: "21:00",
+    time: "23:00",
     poster:
       "https://customer-assets.emergentagent.com/job_restaurant-io/artifacts/pvndj3uw_biju8mai.png",
     tag: "Live Music",
@@ -24,7 +24,7 @@ const events = [
     artist: "Tzancă Uraganu'",
     title: "Concert Live · Tzancă Uraganu'",
     date: "Vineri, 15 Mai",
-    time: "21:00",
+    time: "23:00",
     poster:
       "https://customer-assets.emergentagent.com/job_restaurant-io/artifacts/apr8ef4y_tzanca.png",
     tag: "Live Music",
