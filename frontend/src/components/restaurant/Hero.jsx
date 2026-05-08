@@ -4,6 +4,7 @@ import useReveal from "../../hooks/useReveal";
 
 const HERO_IMG =
   "https://mariasiion.ro/wp-content/uploads/2024/12/448453750_764204029256764_5345791775327686708_n-1024x767.jpg";
+const HERO_VIDEO = "/hero.mp4";
 
 export const Hero = () => {
   const ref = useReveal();
@@ -14,18 +15,31 @@ export const Hero = () => {
       ref={ref}
       className="relative min-h-screen w-full overflow-hidden grain-overlay"
     >
-      {/* Background image — eager load (also preloaded in <head>) */}
+      {/* Background — video on top of poster image. Image stays visible until video plays. */}
       <div className="absolute inset-0">
         <img
           src={HERO_IMG}
           alt="Terasa restaurantului La Maria și Ion în Regie, București"
-          className="w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover"
           loading="eager"
           fetchpriority="high"
           decoding="async"
           width="1024"
           height="767"
         />
+        <video
+          data-testid="hero-bg-video"
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          poster={HERO_IMG}
+          aria-hidden="true"
+        >
+          <source src={HERO_VIDEO} type="video/mp4" />
+        </video>
         {/* Heavier moody overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-stone-950/85 via-stone-950/70 to-stone-950" />
         <div className="absolute inset-0 bg-gradient-to-r from-stone-950/85 via-stone-950/40 to-stone-950/30" />
