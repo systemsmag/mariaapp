@@ -116,6 +116,8 @@ export const Footer = () => {
             <div className="text-xs text-stone-500 font-light leading-relaxed max-w-xl">
               SC RESTAURANT LA MARIA SI ION SRL · CUI 43718579
               <br />
+              Nr. Reg. Com. J2021002400409
+              <br />
               Sediu: Splaiul Independenței 290, Complex Studențesc Regie, București
             </div>
           </div>
@@ -195,7 +197,7 @@ export const Footer = () => {
               y="115"
               textLength="900"
               lengthAdjust="spacingAndGlyphs"
-              fontFamily="'Fraunces', 'Cormorant Garamond', serif"
+              fontFamily="'Fraunces Variable', 'Fraunces', 'Cormorant Garamond', serif"
               fontWeight="500"
               fontSize="140"
               fill="#1c1917"

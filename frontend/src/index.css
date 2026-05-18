@@ -2,13 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Self-hosted fonts (fontsource.org) — font-display:swap, latin-ext for Romanian diacritics */
+@import "@fontsource-variable/fraunces/opsz.css";
+@import "@fontsource-variable/manrope/wght.css";
+@import "@fontsource/cormorant-garamond/400.css";
+@import "@fontsource/cormorant-garamond/500.css";
+@import "@fontsource/cormorant-garamond/600.css";
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+    font-family: 'Manrope Variable', 'Manrope', system-ui, -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #0c0a09;
@@ -63,10 +70,10 @@ body {
         font-family: 'Cormorant Garamond', serif;
     }
     .font-sans {
-        font-family: 'Manrope', sans-serif;
+        font-family: 'Manrope Variable', 'Manrope', sans-serif;
     }
     .font-display {
-        font-family: 'Fraunces', 'Cormorant Garamond', serif;
+        font-family: 'Fraunces Variable', 'Fraunces', 'Cormorant Garamond', serif;
         font-optical-sizing: auto;
         font-variation-settings: "SOFT" 30, "WONK" 0;
     }

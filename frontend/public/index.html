@@ -36,22 +36,11 @@
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.svg" />
 
         <!-- Performance: preconnect & preload -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="preconnect" href="https://mariasiion.ro" />
         <link rel="dns-prefetch" href="https://mariasiion.ro" />
         <link rel="preload" as="image" href="https://mariasiion.ro/wp-content/uploads/2024/12/448453750_764204029256764_5345791775327686708_n-1024x767.jpg" fetchpriority="high" />
 
-        <!-- Fonts: subset to latin-ext for Romanian diacritics -->
-        <link
-            rel="preload"
-            as="style"
-            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@300;400;500;600&display=swap&subset=latin-ext"
-        />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@300;400;500;600&display=swap&subset=latin-ext"
-        />
+        <!-- Fonts: self-hosted via fontsource (Fraunces Variable, Manrope Variable, Cormorant Garamond) - see src/index.css -->
 
         <!-- JSON-LD: Restaurant schema for Google Rich Results -->
         <script type="application/ld+json">

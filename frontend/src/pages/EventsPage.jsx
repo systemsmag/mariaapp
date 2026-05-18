@@ -8,28 +8,28 @@ const RESERVATION_TEL = "+40753473781";
 
 const events = [
   {
-    id: "costel-biju-8mai",
-    artist: "Costel Biju",
-    title: "Friday Night Party · Invitat Special",
-    date: "Vineri, 8 Mai",
+    id: "jador-22mai",
+    artist: "Jador",
+    title: "Concert Live · Jador",
+    date: "Vineri, 22 Mai",
     time: "23:00",
     poster:
-      "https://customer-assets.emergentagent.com/job_restaurant-io/artifacts/pvndj3uw_biju8mai.png",
+      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1400&q=85",
     tag: "Live Music",
     description:
-      "O seară de neuitat alături de Costel Biju — manele live, atmosferă electrică și meniul de casă La Maria și Ion. Locuri limitate, rezervare recomandată.",
+      "Jador urcă pe scena La Maria și Ion pentru o noapte de manele live și hituri cunoscute. Atmosferă electrică, mâncare ca acasă și voie bună până-n zori. Rezervările se fac în avans.",
   },
   {
-    id: "tzanca-uraganu-15mai",
-    artist: "Tzancă Uraganu'",
-    title: "Concert Live · Tzancă Uraganu'",
-    date: "Vineri, 15 Mai",
-    time: "23:00",
+    id: "finala-champions-league-30mai",
+    artist: "Finala Champions League",
+    title: "Live pe ecran mare · UEFA Champions League Final",
+    date: "Sâmbătă, 30 Mai",
+    time: "19:00",
     poster:
-      "https://customer-assets.emergentagent.com/job_restaurant-io/artifacts/apr8ef4y_tzanca.png",
-    tag: "Live Music",
+      "https://images.unsplash.com/photo-1543351611-58f69d7c1781?w=1400&q=85",
+    tag: "Sport · Live",
     description:
-      "Tzancă Uraganu' aduce uraganul de hituri direct pe terasa La Maria și Ion. Show, voie bună și mâncare ca la mama acasă. Rezervările se fac în avans.",
+      "Vezi finala UEFA Champions League pe ecran mare, pe terasă, alături de prieteni și suporteri. Berea curge, mâncarea sfârâie pe jar și fiecare gol e o sărbătoare. Coup d'envoi la 19:00 — vino din timp să prinzi masă bună.",
   },
 ];
 
