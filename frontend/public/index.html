@@ -13,6 +13,9 @@
         <meta name="keywords" content="restaurant Regie, restaurant Bucuresti, terasa Regie, La Maria si Ion, mancare romaneasca, bucatarie romaneasca, Splaiul Independentei" />
         <meta name="author" content="La Maria și Ion" />
 
+        <!-- Canonical (override per-route via JS in App.js) -->
+        <link rel="canonical" href="https://mariasiion.ro/" />
+
         <!-- Open Graph -->
         <meta property="og:type" content="restaurant.restaurant" />
         <meta property="og:title" content="La Maria și Ion · Restaurant tradițional în Regie, București" />
@@ -47,18 +50,32 @@
             {
                 "@context": "https://schema.org",
                 "@type": "Restaurant",
+                "@id": "https://mariasiion.ro/#restaurant",
                 "name": "La Maria și Ion",
-                "image": "https://mariasiion.ro/wp-content/uploads/2024/12/448453750_764204029256764_5345791775327686708_n-1024x767.jpg",
+                "alternateName": "Restaurant La Maria si Ion",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://mariasiion.ro/wp-content/uploads/2024/12/448453750_764204029256764_5345791775327686708_n-1024x767.jpg",
+                    "width": 1024,
+                    "height": 767
+                },
                 "url": "https://mariasiion.ro",
+                "logo": "https://customer-assets.emergentagent.com/job_restaurant-io/artifacts/v19w2nb8_logo.png",
                 "telephone": "+40753473781",
                 "email": "support@mariasiion.ro",
                 "priceRange": "$$",
                 "servesCuisine": ["Romanian", "Traditional", "Italian"],
+                "menu": "https://mariasiion.ro/meniu",
+                "hasMenu": "https://mariasiion.ro/meniu.pdf",
+                "acceptsReservations": "True",
+                "paymentAccepted": "Cash, Credit Card",
+                "currenciesAccepted": "RON",
                 "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "Splaiul Independenței 290",
                     "addressLocality": "București",
                     "addressRegion": "Sector 6",
+                    "postalCode": "060044",
                     "addressCountry": "RO"
                 },
                 "geo": {
@@ -66,6 +83,15 @@
                     "latitude": "44.4426",
                     "longitude": "26.0517"
                 },
+                "hasMap": "https://www.google.com/maps/place/Splaiul+Independen%C8%9Bei+290,+Bucure%C8%99ti",
+                "areaServed": [
+                    {"@type": "City", "name": "București"},
+                    {"@type": "AdministrativeArea", "name": "Sector 6"}
+                ],
+                "sameAs": [
+                    "https://www.instagram.com/mariasiion/",
+                    "https://www.facebook.com/mariasiion/"
+                ],
                 "openingHoursSpecification": [
                     {
                         "@type": "OpeningHoursSpecification",
@@ -82,58 +108,112 @@
             }
         </script>
 
+        <!-- JSON-LD: Organization (legal entity) -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "@id": "https://mariasiion.ro/#organization",
+                "name": "SC RESTAURANT LA MARIA SI ION SRL",
+                "url": "https://mariasiion.ro",
+                "logo": "https://customer-assets.emergentagent.com/job_restaurant-io/artifacts/v19w2nb8_logo.png",
+                "taxID": "43718579",
+                "vatID": "RO43718579",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Splaiul Independenței 290",
+                    "addressLocality": "București",
+                    "addressRegion": "Sector 6",
+                    "addressCountry": "RO"
+                },
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+40753473781",
+                    "contactType": "reservations",
+                    "areaServed": "RO",
+                    "availableLanguage": ["Romanian"]
+                }
+            }
+        </script>
+
+        <!-- JSON-LD: WebSite (for sitelinks searchbox eligibility) -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "@id": "https://mariasiion.ro/#website",
+                "url": "https://mariasiion.ro",
+                "name": "La Maria și Ion",
+                "inLanguage": "ro-RO",
+                "publisher": {"@id": "https://mariasiion.ro/#organization"}
+            }
+        </script>
+
+        <!-- JSON-LD: FAQPage — answers real questions about the restaurant -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Unde se află restaurantul La Maria și Ion?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Restaurantul La Maria și Ion se află pe Splaiul Independenței 290, în Complexul Studențesc Regie, sector 6, București. Avem terasă mare și parcare gratuită."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Care este programul restaurantului La Maria și Ion?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Suntem deschiși zilnic, de luni până duminică, între orele 12:00 și 00:00. Bucătăria este deschisă pe toată durata programului."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Cum fac o rezervare la La Maria și Ion?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Rezervările se fac telefonic la numărul 0753 473 781 sau prin WhatsApp. Recomandăm rezervarea în avans, mai ales vineri și sâmbătă seara sau în zilele cu evenimente live."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Ce bucătărie servește La Maria și Ion?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Servim bucătărie tradițională românească autentică — mâncare la jar, mămăligă, ciorbe, sarmale, papanași — și paste italienești pe terasa din Regie, București. Avem și platouri pentru 2, 4 și 6 persoane."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Au evenimente live La Maria și Ion?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da, organizăm seri tematice cu artiști live, transmisii live ale meciurilor importante (inclusiv Finala Champions League pe ecran mare) și petreceri. Vezi pagina Evenimente pentru următoarele date."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Acceptați plata cu cardul?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Da, acceptăm atât plata cash cât și cu cardul (debit, credit). Bacșișul este inclus în nota de plată."
+                        }
+                    }
+                ]
+            }
+        </script>
+
         <script>window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);</script>
         <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
     </head>
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
-        <a
-            id="emergent-badge"
-            target="_blank"
-            href="https://app.emergent.sh/?utm_source=emergent-badge"
-            style="
-                display: inline-flex !important;
-                box-sizing: border-box;
-                width: 178px;
-                height: 40px;
-                padding: 8px 12px 8px 12px;
-                align-items: center !important;
-                gap: 8px;
-                border-radius: 50px !important;
-                background: #000 !important;
-                position: fixed !important;
-                bottom: 16px;
-                right: 16px;
-                text-decoration: none;
-                font-family: -apple-system, BlinkMacSystemFont,
-                    &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell,
-                    &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;,
-                    sans-serif !important;
-                font-size: 12px !important;
-                z-index: 9999 !important;
-            "
-        >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M15.5702 8.13142C15.7729 8.0412 16.0007 8.18878 15.9892 8.4103C15.8374 11.3192 14.0965 14.0405 11.2531 15.3065C8.40964 16.5725 5.2224 16.0453 2.95912 14.2117C2.78676 14.072 2.82955 13.804 3.03219 13.7137L4.95677 12.8568C5.04866 12.8159 5.15446 12.823 5.24204 12.8725C6.73377 13.7153 8.59176 13.8649 10.2772 13.1145C11.9626 12.3641 13.0947 10.8833 13.4665 9.21075C13.4883 9.11256 13.5539 9.02918 13.6457 8.98827L15.5702 8.13142Z" fill="white"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3066 4.74698L15.5067 5.19653C15.5759 5.35178 15.5061 5.53366 15.3508 5.60278L1.29992 11.8586C1.14467 11.9278 0.962794 11.8579 0.893675 11.7027L0.701732 11.2716L0.693457 11.2531C-1.10317 7.21778 0.711626 2.49007 4.74692 0.693443C8.78221 -1.10318 13.51 0.711693 15.3066 4.74698ZM2.82356 8.55367C2.63552 8.63739 2.41991 8.51617 2.40853 8.31065C2.28373 6.05724 3.53858 3.85787 5.72286 2.88536C7.90715 1.91286 10.3813 2.45199 11.9724 4.05256C12.1175 4.19854 12.0633 4.43988 11.8753 4.5236L2.82356 8.55367Z" fill="white"/>
-            </svg>
-            <p
-                style="
-                    color: #FFF !important;
-                    font-family: 'Inter', sans-serif !important;
-                    font-size: 13px !important;
-                    font-style: normal !important;
-                    font-weight: 600 !important;
-                    line-height: 20px !important;
-                    margin: 0 !important;
-                    white-space: nowrap !important;
-                "
-            >
-                Made with Emergent
-            </p>
-        </a>
-        <script>
+                <script>
             !(function (t, e) {
                 var o, n, p, r;
                 e.__SV ||
